@@ -26,13 +26,16 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         h2 {
             border-bottom: 2px solid #333;
             padding-bottom: 5px;
+            text-align: left;
         }
         .section {
             margin-bottom: 20px;
+            text-align: left;
         }
         ul {
             list-style-type: none;
@@ -41,25 +44,35 @@
         li {
             margin-bottom: 10px;
         }
-        .profile {
+        .profile-text {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .profile-image {
             text-align: center;
         }
-        .profile img {
+        .profile-image img {
             border-radius: 10px;
             margin-top: 10px;
+            width: 400px;
+            max-width: 100%;
         }
     </style>
 </head>
 <body>
-    <header>Welcome to My Personal Website</header>
+    <header>Nikoli Cooper</header>
     
     <div class="container">
-        <!-- About Me Section with Image -->
-        <div class="section profile">
+        <!-- About Me Section -->
+        <div class="section profile-text">
             <h2>About Me</h2>
             <p>Hello, my name is <strong>Nokoli Cooper</strong>. I am an undergraduate sophomore studying Physics with a minor in Computer Science at the University of Arizona.</p>
             <p>I am interested in researching <strong>fusion</strong> and <strong>robotic automation</strong>. Once I finish my undergraduate studies in May 2027, I plan on pursuing a PhD in Plasma Physics or Aerospace Engineering to further my contributions to research in fusion and robotics in space missions.</p>
-            <img src="Headshot.jpg" alt="My Profile Picture" width="400">
+        </div>
+
+        <!-- Profile Image Below the Text -->
+        <div class="profile-image">
+            <img src="Headshot.jpg" alt="My Profile Picture">
         </div>
 
         <!-- Education Section -->
@@ -101,4 +114,9 @@
             <ul>
                 <li>Wildcat Robotics Club - CAD, Systems Design, and Control Programming</li>
                 <li>Wildcat Rocketry and Engineering Club - System Requirements and Testing</li>
-                <li>TIMESTEP Symposium Series - High-Performance Computing and GitHub Experienc
+                <li>TIMESTEP Symposium Series - High-Performance Computing and GitHub Experience</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
